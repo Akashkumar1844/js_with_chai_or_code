@@ -26,7 +26,34 @@
 //string as("akash") => true
 
 
-let someNumber = 33;
-let stringNumber = String(someNumber);//number string ban gya
-console.log(stringNumber) ;
-console.log( typeof stringNumber) ;//
+// let someNumber = 33;
+// let stringNumber = String(someNumber);//number string ban gya
+// console.log(stringNumber) ;
+// console.log( typeof stringNumber) ;
+
+
+//**********************operation********************
+
+// let value = 34;
+// let negativeValue = -value;
+// console.log(negativeValue);
+
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(4/2);
+// console.log(5%2);
+
+//Two add two string
+
+let str1 = "hello";
+let str2 = "Akash";
+let str3 = str1 + str2;
+console.log(str3);
+
+
+
+
+
