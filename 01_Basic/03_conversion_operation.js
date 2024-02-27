@@ -48,12 +48,18 @@
 
 //Two add two string
 
-let str1 = "hello";
-let str2 = "Akash";
-let str3 = str1 + str2;
-console.log(str3);
+// let str1 = "hello";
+// let str2 = "Akash";
+// let str3 = str1 + str2;
+// console.log(str3);
 
 
+//postfix and prefix
+let gameCounter = 100;
+++gameCounter;
 
+console.log(gameCounter);
 
+gameCounter--;
+console.log(gameCounter);
 
