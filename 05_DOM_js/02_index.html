@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom input</title>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+
+    <script>
+        const ParentEle =document.querySelector(".parent")
+         console.log(ParentEle);
+        // console.log(ParentEle.children);//to access child element
+        // console.log(ParentEle.children[1]);//to access 2nd child
+        // console.log(ParentEle.children[0]);//to access 1st child
+        // console.log(ParentEle.children[0].innerHTML);//inner html acces the inerpart of the elemet
+
+        for(let i = 0; i < ParentEle.children ;i++){
+            console.log(ParentEle.children[i].innerHTML);
+        }
+        parentEle.children[1].style.color ="orange";
+        
+    </script>
+    
+</body>
+
+</html>

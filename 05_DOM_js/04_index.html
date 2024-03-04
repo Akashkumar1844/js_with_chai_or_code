@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="color: rgb(174, 80, 14); background-color: rgb(227, 199, 199);"> 
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+ <script>
+
+    // first method to append child
+       function AddLang(language){
+            const list = document.createElement('li');//to create element
+            list.innerHTML = `${language}`;
+            document.querySelector('.language').appendChild(list);
+
+       }
+       AddLang("python");
+       AddLang("Java");
+
+
+    //    second method to append child
+        function addOptiLanguage(langname){
+           const list = document.createElement('li');
+            list.appendChild(document.createTextNode(langname));
+            document.querySelector('.language').appendChild(list);
+        }
+        addOptiLanguage("golang")
+
+        //to edit element
+
+        const secondLang = document.querySelector("li:nth-child(2)");
+        console.log(secondLang);
+        secondLang.innerHTML="mojo";//not optimize method
+        // so use 
+        const newLi =document.createElement('li');
+        newLi.textContent = "mojo";
+        secondLang.replaceWith(newLi);
+
+        //other method
+        const firstLang =document.querySelector("li:nth-child(1)");
+        firstLang.outerHTML="<li>typescript</li>";
+        
+
+        //remove element
+        const lastLang = document.querySelector("li:last-child");
+        lastLang.remove()
+
+ </script>
+</html>

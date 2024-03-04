@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+   
+    
+</body>
+<script>
+    const div =document.createElement('div');
+    //create div n html
+   console.log(div);
+     // how to attached new file in document 
+   document.body.appendChild(div);
+//    div.style.backgroundColor = "green";
+   div.style.bordere = "green 2px solid";
+   div.style.height = "15px";
+    div.className = "main";// add class attribute
+    div.id="myId";//add id selector
+    div.innerHTML="Hello world";
+    //how to add attributein created div
+
+    div.setAttribute("title", "generated attribute");
+
+    //to add style in created div
+
+    div.style.backgroundColor = "green";
+
+    // div.innerHTML = "hello world with chai with code"
+
+    // other formate 
+
+    const addText = document.createTextNode("Chai aur code");
+    div.appendChild(addText);
+   //to display the all property apply in javascript
+
+  
+
+   
+</script>
+</html>
