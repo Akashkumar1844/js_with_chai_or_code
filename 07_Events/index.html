@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li img{
+            height: 100px;
+            width: 200px;
+            border: 2px solid rgb(227, 8, 8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="listValue">
+            <li class="collection"><img id="img1" src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg" alt=""></li>
+
+            <li class="collection"><img id="img2" src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt=""></li>
+
+            <li class="collection"><img id="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_C3OjH3BbicdZ1UP0jAncMv-HpNvU_B1fg6C8H_vcg&s" alt=""></li>
+
+            <li class="collection"><img id="img4" src="https://cdn.create.vista.com/api/media/small/65245309/stock-photo-pier-under-moon" alt=""></li>
+
+            <li class="collection"><img id="img5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5R1K9rrQvvzwJ-A8jTHmZ_hLHfBz9g97N74TD4IzdVvCxeW7WhIvJzmt5h0q_fo6eXHI&usqp=CAU" alt=""></li>
+            <li>
+                <a href="https://www.google.co.in/">
+                    google
+                </a> </li>
+        </ul>
+    </div>
+    <script>
+        const body= document.querySelector('body');
+       const image1 = document.querySelector('#img1').addEventListener('click',function(){
+            console.log("hello")
+            
+        })
+
+        //type,timestamp , defaultPrevented
+        //target,toElement,srcElement,currentTarget,clientX,clientY,screenX,screenY,altKey,ctrlkey,shifkey,keyCode
+
+
+        //***addEventPropogation
+        //jab false(default value) rahega then click 2nd img me raha to first 2nd img ka function aayega then url ka vice-virsa true ke saath just ulta hoga
+
+
+        // document.querySelector('.container').addEventListener('click', function() {
+        //     console.log("clicked inside the url");
+        // },true)//defaultvalue is false add
+        // document.querySelector('#img2').addEventListener('click', function() {
+        //     console.log("clicked image2");
+        // })
+        // document.querySelector('#img2').addEventListener('click', function() {
+        //     console.log("clicked image2");
+        // },true)
+        // to stop propagation
+        // document.querySelector('#img2').addEventListener('click', function(e) {
+        //     console.log("clicked image2");
+        //     e.stopPropagation()
+
+        // },true);
+        //when click the image d,image dispare
+
+    document.querySelector('.container').addEventListener('click',function (e) {
+        // let removeIt = e.target.parentNode;
+        // removeIt.remove();// method1
+
+        // ye direct karne se ul hi url me hai then sra file click karne se remove ho ja rah hai but heme sirf img ko remove kerne hai.
+        //2nd method
+        // removeIt.parentNode.removeChild(removeIt);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode;
+        removeIt.remove();
+        }
+
+    },false)
+
+
+    </script>
+</body>
+</html>

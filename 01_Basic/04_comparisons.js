@@ -1,5 +1,5 @@
 
-///*********avoid this type of comparisons****** */
+//*********avoid this type of comparisons****** */
 
 // console.log(2>1);
 // console.log(2>=1);

@@ -18,7 +18,7 @@ const regularUser ={
     }
 }
 
-// console.log(regularUser.fullName.userfullname.firstname);
+console.log(regularUser.fullName.userfullname.firstname);
 
 //combine two object
 
@@ -31,13 +31,13 @@ const obj2 ={3:"c",4:"d"}
 
 const obj3 = Object.assign({},obj1,obj2);//Object.assign is used to merge two object use kam hi hota hai
 
-// console.log(obj3)//{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+console.log(obj3)//{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
 //most used to merge two array
 
 const obj4= {...obj1,...obj2};//most of the time use this type of object
 
-// console.log(obj4);
+console.log(obj4);
 
 
 
@@ -62,13 +62,13 @@ const users =[
     }
 ]
 
-// console.log(users);
+console.log(users);
 const tinderUser ={}//Non singletomn object
 
 tinderUser.id = "123abc";
 tinderUser.name = "Sam";
 tinderUser.isLoggedIn = false
-// console.log(Object.keys(tinderUser));//to find keys  from object ans:= 'id', 'name', 'isLoggedIn' ]
+console.log(Object.keys(tinderUser));//to find keys  from object ans:= 'id', 'name', 'isLoggedIn' ]
 
 
 // console.log(Object.values(tinderUser));//to find value of object[ '123abc', 'Sam', false ]

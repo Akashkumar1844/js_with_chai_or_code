@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+         Chai or code
+    </h1>
+
+    <button id="stop">stop</button>
+    <script>
+        // setTimeout(function(){
+        //         console.log("Akash")
+        // },2000)//time diya jata hai eshse give time ke bad function code execute hota hai
+
+        // setInterval(function(){
+        //     console.log("i love my india")
+        // },1000)//continue given time me repeat hote rahega
+
+        // to give the reference to setinterval
+
+        // const givenFunction = function(){
+        //     console.log("Akash")
+        // }
+        // setTimeout(givenFunction,2000);
+
+        const changeText =function(){
+            
+         document.querySelector("h1").innerHTML = "Best learning plateform";
+        }
+        const stopTimeOut =setTimeout(changeText,2000)
+
+        //effect  ko rokne ke liye button ka use kaise hoga clearTimout
+        const  Button = document.querySelector("#stop");
+
+        Button.addEventListener('click',function(){
+            clearTimeout(stopTimeOut);
+        })
+
+    </script>
+</body>
+</html>

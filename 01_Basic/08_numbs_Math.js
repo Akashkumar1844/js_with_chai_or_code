@@ -14,8 +14,8 @@ const  balance = new  Number(600);//but yaha per number laga dene se confirm num
 
 // console.log(balance.toFixed(2));//600.00 fixed ke ander 2 means 2 decimal value
 
-// const otherNumber = 23.890345;
-// console.log(otherNumber.toPrecision(3));//Number of significant digits. Must be in the range 1 - 21, inclusive.Returns a string containing a number represented either in exponential or fixed-point notation with a specified number of digits.
+const otherNumber = 23.890345;
+console.log(otherNumber.toPrecision(3));//Number of significant digits. Must be in the range 1 - 21, inclusive.Returns a string containing a number represented either in exponential or fixed-point notation with a specified number of digits.
 
 // const numberTwo = 1000000;
 
@@ -42,21 +42,21 @@ const  balance = new  Number(600);//but yaha per number laga dene se confirm num
 //random
 
 
-console.log(Math.random());//return value between 0 and less then 1
+// console.log(Math.random());//return value between 0 and less then 1
 
 
 
-console.log((Math.random()*10)+1);//number ko ek se jyda  lane ke liye but 1 add karne ka reason hai jab kabhi random number ka decimal ke bad 1 zero rahega tab output bhi zero hi aayega 0.0*10=0 eshliye 1 add kiye
+// console.log((Math.random()*10)+1);//number ko ek se jyda  lane ke liye but 1 add karne ka reason hai jab kabhi random number ka decimal ke bad 1 zero rahega tab output bhi zero hi aayega 0.0*10=0 eshliye 1 add kiye
 
 
 
-console.log(Math.floor((Math.random()*10)+1));
+// console.log(Math.floor((Math.random()*10)+1));
 
 //***********very important formula*********** */
 const min =10;
 const max = 20;
 
-console.log(Math.floor((Math.random()*(max-min+1))+min));
+// console.log(Math.floor((Math.random()*(max-min+1))+min));
 
 
 

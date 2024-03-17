@@ -100,7 +100,7 @@ handleObject({
 const myNewArray =[200,300,100,600];
 
 function handleArray(getArray){
-    return getArray[1];
+    return getArray[2];
 }
 
 // console.log(handleArray(myNewArray));

@@ -21,7 +21,7 @@ let userone ={
 let usertwo = userone;
 
 usertwo.email = "rajakash@gmail.com";
-
+   
 console.log(userone.email);
 console.log(usertwo.email);
 

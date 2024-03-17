@@ -19,7 +19,7 @@ map.set('USA',"United States of America")
 map.set('Fr',"france")
 map.set('IN',"India")
 
-// console.log(map);
+console.log(map);
 /*'IN' => 'India',
                 'USA' => 'United States of America',
                 'Fr' => 'france'*/
@@ -46,8 +46,8 @@ for(const [key,value] of map){
    'game3': "super mario"
    }
 
-//    for(const game of myObject){
-    // console.log(game);//myObject is not iterable
-//    }
+   for(const game of myObject){
+    console.log(game);//myObject is not iterable
+   }
 
 

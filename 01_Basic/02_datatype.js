@@ -3,9 +3,9 @@
 
 // alert(3+3) //we are using node js not browser
 
-//code readbility so write in this way
-console.log(3+3);
-console.log("akash");
+//code readability so write in this way
+// console.log(3+3);
+// console.log("akash");
 
 //types of datatype
 
@@ -22,7 +22,7 @@ let isLoggedIn = false ; // boolean datatype
 
 //objet => 
 
-console.log(typeof"Akash");
+// console.log(typeof"Akash");
 console.log(typeof null);//object
 
-console.log(typeof undifined);//undefined
+console.log(typeof undefined);//undefined

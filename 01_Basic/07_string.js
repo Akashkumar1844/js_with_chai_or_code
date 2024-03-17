@@ -10,7 +10,7 @@
 //another form
 
 
-// const gameName = new  String('Akashkumar')
+const gameName = new  String('Akashkumar')
 
 // console.log(gameName);
 // console.log(gameName[0]);
@@ -20,7 +20,7 @@
 // console.log(gameName.toLowerCase());
 // console.log(gameName.charAt(4));//h find the position of character  (string).
 
-// console.log(gameName.__proto__);
+console.log(gameName.__proto__);
 // console.log(gameName[5]);
 // console.log(gameName.indexOf('h'));//4{ to find the index of the string.}
 
@@ -35,23 +35,23 @@
 
 const trimeString = "    radheKrishana    ";
 
-console.log(trimeString);//    radheKrishana     printed with extra spaces 
-console.log(trimeString.trim());//printed without any extra spaces or remove extra space from string
+// console.log(trimeString);//    radheKrishana     printed with extra spaces 
+// console.log(trimeString.trim());//printed without any extra spaces or remove extra space from string
 
 
 //replace kerne ka kam kerta hai
 
 const url = " raj-akash-#-gmail-com";
-console.log(url.replace('#','@'));//rajakash@gmail.com
+// console.log(url.replace('#','@'));//rajakash@gmail.com
 
 
 //include :- use puchne ke liye ---string present hai ya nhi
 
-console.log(url.includes("raj"));//true value comes
+// console.log(url.includes("raj"));//true value comes
 
 
 // to convert string in array
 
-console.log(url.split('-'));//split contain separator  and limit .'-' here  is separator
+console.log(url.split('*'));//split contain separator  and limit .'-' here  is separator
 
 
